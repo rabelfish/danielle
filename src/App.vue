@@ -28,12 +28,11 @@ export default {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
-    background-color: #f4f4f6;
     color: #363242;
   }
 
   #main-conatiner {
-    padding-top: 60px;
+    padding-top: 70px;
   }
 
 </style>

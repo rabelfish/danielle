@@ -3,20 +3,6 @@
     <div>
       <iframe allowtransparency="true" scrolling="no" frameborder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fdanielle-fisher-703505434&color=orange_white&size=32" style="width: 32px; height: 32px;"></iframe>
       <a href="https://www.facebook.com/danielle.fisher.965" target="_blank"><img :src="require('@/assets/FB-f-Logo__blue_50.png')" alt="FB" height="32"></a>
-      <a href="https://linkedin.com" target="_blank"><img :src="require('@/assets/In-2C-34px-R.png')" alt="IN" height="32"></a>
-      <!-- do danielles linkedin -->
-    </div>
-    <br>
-    <div>
-    <router-link
-      class="footer-link"
-      :to="link.link"
-      v-for="link in links"
-      :key="link.name"
-      tag="span"
-    >
-      {{ link.name }}
-    </router-link>
     </div>
     <br>
     <div class="caption">Copyright &copy; 2018 Danielle Fisher Music</div>

@@ -8,33 +8,55 @@ import Contact from '@/components/pages/Contact'
 
 Vue.use(Router)
 
-export default new Router({
+const router = new Router({
   mode: 'history',
   routes: [
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: Home,
+      meta: {
+        title: 'Danielle Fisher'
+      }
     },
     {
       path: '/about',
       name: 'about',
-      component: About
+      component: About,
+      meta: {
+        title: 'Danielle Fisher'
+      }
     },
     {
       path: '/music',
       name: 'music',
-      component: Music
+      component: Music,
+      meta: {
+        title: 'Danielle Fisher'
+      }
     },
     {
       path: '/news',
       name: 'news',
-      component: News
+      component: News,
+      meta: {
+        title: 'Danielle Fisher'
+      }
     },
     {
       path: '/contact',
       name: 'contact',
-      component: Contact
+      component: Contact,
+      meta: {
+        title: 'Danielle Fisher'
+      }
     }
   ]
 })
+
+router.beforeEach((to, from, next) => {
+  document.title = to.meta.title
+  next()
+})
+
+export default router
