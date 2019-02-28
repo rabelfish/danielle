@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import Home from '@/components/pages/Home'
 import About from '@/components/pages/About'
 import Music from '@/components/pages/Music'
-import News from '@/components/pages/News'
+import Experience from '@/components/pages/Experience'
 import Contact from '@/components/pages/Contact'
 
 Vue.use(Router)
@@ -36,9 +36,9 @@ const router = new Router({
       }
     },
     {
-      path: '/news',
-      name: 'news',
-      component: News,
+      path: '/experience',
+      name: 'experience',
+      component: Experience,
       meta: {
         title: 'Danielle Fisher'
       }

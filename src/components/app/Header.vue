@@ -1,26 +1,29 @@
 <template>
   <div id="header">
     <v-layout row wrap>
-      <v-flex xs6 class="text-xs-left">
+      <v-flex xs8 sm6 class="text-xs-left">
         <div id="name" class="primary--text font-weight-thin display-1" style="padding:10px;">Danielle Fisher</div>
       </v-flex>
-      <v-flex xs6>
-        <div class="text-xs-center">
-        <v-tabs
-          v-model="active"
-          slider-color="secondary"
-        >
-          <router-link
-            tag="v-tab"
-            :to="tab.link"
-            v-for="tab in tabs"
-            :key="tab.name"
-            ripple
+      <v-flex xs4 sm6>
+        <div v-if="!isMobile()" class="text-xs-center">
+          <v-tabs
+            v-model="active"
+            slider-color="secondary"
           >
-            {{ tab.name }}
-          </router-link>
-        </v-tabs>
+            <router-link
+              tag="v-tab"
+              :to="tab.link"
+              v-for="tab in tabs"
+              :key="tab.name"
+              ripple
+            >
+              {{ tab.name }}
+            </router-link>
+          </v-tabs>
         </div>
+         <div v-if="isMobile()">
+            <i id="toggle" @click.stop="onToggle()" class="material-icons md-48">menu</i>
+         </div>
       </v-flex>
     </v-layout>
   </div>
@@ -44,9 +47,25 @@ export default {
         link: 'music'
       },
       {
+        name: 'Experience',
+        link: 'experience'
+      },
+      {
         name: 'Contact',
         link: 'contact'
       }]
+    }
+  },
+  methods: {
+    isMobile () {
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        return true
+      } else {
+        return false
+      }
+    },
+    onToggle () {
+      this.$emit('toggle')
     }
   }
 }
@@ -60,9 +79,17 @@ export default {
     height: 60px;
     margin:0 5px 5px 5px;
     border-bottom: 1px solid lightgray;
+    z-index: 2000;
   }
 
-  #name {
-    font-weight: 50;
+  #toggle {
+    position: fixed;
+    top:5px;
+    right: 10px;
   }
+
+  .md-48 {
+    font-size: 48px !important;
+  }
+
 </style>

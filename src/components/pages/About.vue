@@ -1,10 +1,10 @@
 <template>
   <div id="about">
     <v-layout row wrap>
-      <v-flex sm6>
+      <v-flex sm12 md6>
          <v-layout row wrap>
             <v-flex xs12>
-              <img :src="require('@/assets/danielle-4.jpg')" alt="danielle" width="500px" aspect-ratio="1">
+              <img id="x-img" :src="require('@/assets/danielle-4.jpg')" alt="danielle" aspect-ratio="1">
             </v-flex>
             <v-flex xs12>
               <img :src="require('@/assets/danielle-1.jpg')" alt="danielle" width="250px" aspect-ratio="1">
@@ -12,7 +12,7 @@
             </v-flex>
         </v-layout>
       </v-flex>
-      <v-flex xs6>
+      <v-flex sm12 md6>
         <div id="about-text" class="text-xs-center">
           <p class="primary--text">Born in 1995 in Simi Valley, California, I started playing flute at the age of nine and very quickly fell
             in love with music.
@@ -30,7 +30,7 @@
             many pieces performed while I was at Fresno State, and most recently have been composing works by commission as I prepares
             to start my masters degree.
             <br /><br />
-            I currently resides in Fresno, California and am working for the Fresno Philharmonic.
+            I currently reside in Fresno, California and am working for the Fresno Philharmonic.
           </p>
         </div>
       </v-flex>
@@ -48,4 +48,17 @@
     font-size: 20px;
     padding-top:30px;
   }
+
+  @media (max-width: 1100px) {
+    #about-text {
+      width: 100%;
+    }
+  }
+
+  #x-img {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+  }
+
 </style>
