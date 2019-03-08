@@ -5,7 +5,7 @@
       <a href="https://www.facebook.com/danielle.fisher.965" target="_blank"><img :src="require('@/assets/FB-f-Logo__blue_50.png')" alt="FB" height="32"></a>
     </div>
     <br>
-    <div class="caption">Copyright &copy; 2018 Danielle Fisher Music</div>
+    <div class="caption">Danielle Fisher Music 2019</div>
   </div>
 </template>
 
