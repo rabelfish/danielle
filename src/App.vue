@@ -102,6 +102,7 @@ export default {
 
   #nav-drawer {
     padding-top: 70px;
+    z-index: 100;
   }
 
 </style>
