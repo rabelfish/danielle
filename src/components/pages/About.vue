@@ -4,11 +4,11 @@
       <v-flex sm12 md6>
          <v-layout row wrap>
             <v-flex xs12>
-              <img id="x-img" :src="require('@/assets/danielle-4.jpg')" alt="danielle" aspect-ratio="1">
+              <img id="x-img" :src="require('@/assets/images/danielle-4.jpg')" alt="danielle" aspect-ratio="1">
             </v-flex>
             <v-flex xs12>
-              <img :src="require('@/assets/danielle-1.jpg')" alt="danielle" width="250px" aspect-ratio="1">
-              <img :src="require('@/assets/danielle-3.jpg')" alt="danielle" width="250px" aspect-ratio="1">
+              <img :src="require('@/assets/images/danielle-1.jpg')" alt="danielle" width="250px" aspect-ratio="1">
+              <img :src="require('@/assets/images/danielle-3.jpg')" alt="danielle" width="250px" aspect-ratio="1">
             </v-flex>
         </v-layout>
       </v-flex>

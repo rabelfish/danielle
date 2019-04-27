@@ -3,8 +3,9 @@
     <div id="home-layout">
       <v-layout row>
         <v-flex xs12 mt-5 mb-5 align-content-center>
+          <img :src="require('@/assets/images/piano-sheet.jpg')" alt="bckgound" class="bg" />
           <div>
-          <img id="avatar" :src="require('@/assets/danielle-2-square.jpg')" alt="danielle" aspect-ratio="1">
+          <img id="avatar" :src="require('@/assets/images/danielle-2-square.jpg')" alt="danielle" aspect-ratio="1">
           </div>
         </v-flex>
       </v-layout>
@@ -47,22 +48,26 @@ export default {
   height: 800px;
   position: relative;
   margin-top: 0;
+  width:100%;
 }
 
-#home-layout::after {
-  content: "";
-  background-image: url('../../assets/sheet-cropped.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+.bg {
+  width:100%;
+  height:auto;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  position: absolute;
-  z-index: 1;
-  opacity: 0.3;
+  position: fixed;
+  z-index: 0;
+  opacity: 0.4;
 }
 
+ @media (max-width: 1100px) {
+    .bg {
+      width: 235%;
+    }
+  }
 #avatar {
   border-radius: 50%;
   z-index: 2;
@@ -73,6 +78,7 @@ export default {
 
 #sc_single {
   min-width: 370px;
+  z-index: 1;
 }
 
 </style>

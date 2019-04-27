@@ -7,7 +7,6 @@
         <p>Please feel free to reach out to me via email at <span id="email"><strong>daniellegfisher48@gmail.com</strong></span></p>
       </v-flex>
     </v-layout>
-      <!-- <img id="notes" :src="require('@/assets/rainbow-notes.jpg')" alt="notes" aspect-ratio="1"> -->
 </div>
 </div>
 </template>
@@ -33,7 +32,7 @@
 
 #contact-layout::after {
   content: "";
-  background-image: url('../../assets/flute-on-sheet.jpg');
+  background-image: url('../../assets/images/flute-on-sheet.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   top: 0;
