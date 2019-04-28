@@ -27,7 +27,7 @@
              <br /><br />
             I have written music for large ensembles like concert band
             and orchestra, as well as chamber music for string quartet, flute ensemble, duets, trios and even solo voice. I had
-            many pieces performed while I was at Fresno State, and most recently have been composing works by commission as I prepares
+            many pieces performed while I was at Fresno State, and most recently have been composing works by commission as I prepare
             to start my masters degree.
             <br /><br />
             I currently reside in Fresno, California and am working for the Fresno Philharmonic.
